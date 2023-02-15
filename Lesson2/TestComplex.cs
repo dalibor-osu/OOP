@@ -1,4 +1,4 @@
-﻿namespace Lesson1;
+﻿namespace Lesson2;
 
 public class TestComplex
 {

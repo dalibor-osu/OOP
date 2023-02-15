@@ -1,4 +1,4 @@
-﻿using Lesson1;
+﻿using Lesson2;
 
 Complex numberA = new(2.98, 1.45);
 Complex numberB = new(4.23, -1.67);
