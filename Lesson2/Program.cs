@@ -20,5 +20,5 @@ TestComplex.Test(numberA.ComplexConjugate(), expectedConjugateA, "Komplexni sdru
 Console.WriteLine("Vysledek operatoru ==: " + (numberA == numberB));
 Console.WriteLine("Vysledek operatoru !=: " + (numberA != numberB));
 Console.WriteLine("Vysledek modulu cisla A: " + numberA.Modulus());
-Console.WriteLine("Vysledek argumentu cisla A: " + numberA.Argument());
+Console.WriteLine("Vysledek argumentu cisla A: " + numberA.Argument() + " rad, " + numberA.Argument() * 180 / Math.PI + "°");
 
