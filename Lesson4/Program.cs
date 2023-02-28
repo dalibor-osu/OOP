@@ -7,6 +7,28 @@ string testovaciText = "Toto je retezec predstavovany nekolika radky,\n"
                        + "posledni veta!";
                        
 StringStatistics text = new StringStatistics(testovaciText);
+Console.WriteLine(testovaciText);
+Console.WriteLine("\nNumber of words: " + text.NumberOfWords());
+Console.WriteLine("Number of sentences: " + text.NumberOfSentences());
+Console.WriteLine("Longest words: ");
+PrintArray(text.LongestWords());
 
-Console.WriteLine(text.NumberOfWords());
-Console.WriteLine(text.NumberOfSentences());
+Console.WriteLine("\nShortest words: ");
+PrintArray(text.ShortestWords());
+
+Console.WriteLine("\nMost frequent words: ");
+PrintArray(text.MostFrequentWords());
+
+Console.WriteLine("\nSorted words: ");
+PrintArray(text.SortedWords());
+
+void PrintArray(string[] array)
+{
+    Console.Write("\t");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i]);
+        if (i < array.Length - 1)
+            Console.Write(", ");
+    }
+}
