@@ -45,12 +45,11 @@ public class StringStatistics
     public int NumberOfSentences()
     {
         int numberOfSentences = 0;
-        bool isSentence = false;
         
         for (int i = 0; i < _text.Length; i++)
         {
             // Pokud znak není tečka, vykřičník nebo otazník, pokračujeme dál
-            if (_text[i] != '.' && _text[i] != '!' && _text[i] != '?')
+            if (_text[i] is not '.' and not '!' and not '?')
                 continue;
 
             int offset = 1;
