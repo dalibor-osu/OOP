@@ -2,13 +2,13 @@
 
 public abstract class Extremes
 {
-    public static T Greatest<T>(T[] array) where T : IComparable
+    public static T Biggest<T>(T[] array) where T : IComparable
     {
         T greatest = array[0];
 
-        foreach (T t in array)
+        foreach (T obj in array)
         {
-            if (greatest.CompareTo(t) < 0) greatest = t;
+            if (greatest.CompareTo(obj) < 0) greatest = obj;
         }
 
         return greatest;
@@ -18,9 +18,9 @@ public abstract class Extremes
     {
         T greatest = array[0];
 
-        foreach (T t in array)
+        foreach (T obj in array)
         {
-            if (greatest.CompareTo(t) > 0) greatest = t;
+            if (greatest.CompareTo(obj) > 0) greatest = obj;
         }
 
         return greatest;
