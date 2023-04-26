@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Vypocitej" HorizontalAlignment="Center" Margin="0,315,0,0" VerticalAlignment="Top" Height="34" Width="90" Click="Button_Click"/>
+        <TextBox x:Name="Operand1Box" HorizontalAlignment="Left" Margin="185,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="134" Height="30"/>
+        <TextBox x:Name="Operand2Box" HorizontalAlignment="Left" Margin="481,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="134" Height="30"/>
+        <ComboBox x:Name="OperationBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120"/>
+        <Label Content="Operand 1" HorizontalAlignment="Left" Margin="219,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.996,0.772"/>
+        <Label Content="Operand 2" HorizontalAlignment="Left" Margin="515,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Operace" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ResultBox" Background="#f7f7f7" HorizontalAlignment="Center" Margin="0,246,0,0" TextWrapping="Wrap" TextAlignment="Center" FontSize="30" Text="" VerticalAlignment="Top" Height="49" Width="430"/>
+    </Grid>
+</Window>
